@@ -20,7 +20,7 @@ var letters = word.length;
 
 //playerinput
 
-var playerGuess = event.key;
+var playerGuess = event.key.toLowerCase;
 
 document.onkeyup = function(event) {
     var playerGuess = event.key;
