@@ -30,4 +30,11 @@ if (playerGuess === null) {
  break;
 } else if (playerGuess.length !== 1) {
  alert("Don't be a Wilson. You know damn well this terminal only receives single inputs.");
-} else {}
+} else {
+    for (var j = 0; j < word.length; j++) {
+        if (word[j] === playerGuess) {
+         ansKey[j] = playerGuess;
+        remainingLetters--;
+         }
+        }
+}
