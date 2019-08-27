@@ -25,3 +25,9 @@ var playerGuess = event.key;
 document.onkeyup = function(event) {
     var playerGuess = event.key;
 }
+
+if (playerGuess === null) {
+ break;
+} else if (playerGuess.length !== 1) {
+ alert("Don't be a Wilson. You know damn well this terminal only receives single inputs.");
+} else {}
