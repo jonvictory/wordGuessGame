@@ -1,3 +1,12 @@
+//elemetal variables
+
+var directElemental = document.getElementById("directElemental");
+var userElemental = document.getElementById("userElemental");
+//maybe use this later var computerElemental = document.getElementById("computerElemental");
+var winsElemental = document.getElementById("winsElemental");
+var lossElemental = document.getElementById("lossElemental");
+//maybe use later var tiesElemental = document.getElementById("tieElemtnal");
+
 //setting up words and word mechanics
 var werds = [
     "snowcrash",
@@ -7,11 +16,11 @@ var werds = [
     "wilson"
 ]
 
-var werdMath = werds[Math.floor(Math.random()*werds.length)];
+var werdMath = werds[Math.floor(Math.random() * werds.length)];
 
 var ansKey = [];
-for  (var i = 0; i < word.length; i++) {
-    ansKey[i] ="_";
+for (var i = 0; i < word.length; i++) {
+    ansKey[i] = "_";
 }
 
 
@@ -22,19 +31,19 @@ var letters = word.length;
 
 var playerGuess = event.key.toLowerCase;
 
-document.onkeyup = function(event) {
+document.onkeyup = function (event) {
     var playerGuess = event.key;
 }
 
 if (playerGuess === null) {
- break;
+    break;
 } else if (playerGuess.length !== 1) {
- alert("Don't be a Wilson. You know damn well this terminal only receives single inputs.");
+    alert("Don't be a Wilson. You know damn well this terminal only receives single inputs.");
 } else {
     for (var j = 0; j < word.length; j++) {
         if (word[j] === playerGuess) {
-         ansKey[j] = playerGuess;
-        remainingLetters--;
-         }
+            ansKey[j] = playerGuess;
+            remainingLetters--;
         }
+    }
 }
