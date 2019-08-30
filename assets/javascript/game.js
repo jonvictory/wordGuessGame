@@ -14,3 +14,15 @@ var werds = [
     "wilson"
 ]
 
+var werd = werds[Math.floor(Math.random() * werds.length)];
+
+var ansKey = [];
+for (var i = 0; i < werd.length; i++) {
+    ansKey[i] = "_";
+}
+
+
+
+    
+
+
