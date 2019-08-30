@@ -21,33 +21,36 @@ for (var i = 0; i < werd.length; i++) {
     ansKey[i] = "_";
 }
 
-ansKeySel = document.getElementById("userElemental");
 
-function WordGuess() {
-    
+function werdGuess() {
+    ansKeySel = document.getElementById("userElemental");
     ansKeySel.textContent = "Your Word: " + ansKey.join(" ");
     
 }
 
-WordGuess();
+
 
 var remainder = werd.length;
 
-//playerinput
-
-document.onkeyup = function (event) {
-    var playerGuess = event.key.toLowerCase;
-    var playerGuess = event.key;
-    directElemental.textContent = "Your Guess: " + playerGuess;
-
-    for (var j = 0; j < werd.length; j++) {
-        if (werd[j] === playerGuess) {
-            ansKey[j] = playerGuess;
-            remainder--;
-            WordGuess();
+function input() {
+    document.onkeyup = function (event) {
+        var playerGuess = event.key.toLowerCase;
+        var playerGuess = event.key;
+        directElemental.textContent = "Your Guess: " + playerGuess;
+    
+        for (var j = 0; j < werd.length; j++) {
+            if (werd[j] === playerGuess) {
+                ansKey[j] = playerGuess;
+                remainder--;
+                werdGuess();
+            }
         }
     }
-}
+    }
+werdGuess();
+input();
+
+//playerinput
 
     
 
