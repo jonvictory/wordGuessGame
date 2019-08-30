@@ -21,8 +21,15 @@ for (var i = 0; i < werd.length; i++) {
     ansKey[i] = "_";
 }
 
+function WordGuess() {
+    ansKeySel.textContent = "Your Word: " + ansKey.join(" ");
+    ansKeySel = document.getElementById("userElemental");
+}
 
+WordGuess();
 
-    
+var remainder = werd.length;
+
+  
 
 
