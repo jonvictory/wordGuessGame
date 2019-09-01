@@ -22,7 +22,7 @@ for (var i = 0; i < werd.length; i++) {
     ansKey[i] = "_";
 }
 
-
+var playerGuessed = []
 var remainder = werd.length;
 var remainTest = document.getElementById("winsElemental")
 remainTest.textContent = remainder + " fuck you"
@@ -41,14 +41,14 @@ function input() {
         
         var playerInput = event.key;
         playerGuess = playerInput.toLowerCase();
-        var playerGuessed = []
+        
         guessed();
         lossElemental.textContent = playerGuessed + "ASSHAT";
 
         function guessed() {
             var keyPress;
             if (typeof event !== 'undefined') {
-                keyPress = event.keyCode + ",";
+                keyPress = event.keyCode;
               }
               else if (e) {
                 keyPress = e.which;
