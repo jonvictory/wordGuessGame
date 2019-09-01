@@ -14,16 +14,16 @@ var werds = [
     "wilson"
 ]
 //test
-var check = ["c", "h", "e", "k"]
-var test = ["l"]
-function testy(){
-    return "l";
-}
-console.log(testy())
-function testcheck(){
-    console.log(check.findIndex(testy))
-}
-testcheck()
+// var check = ["c", "h", "e", "k"]
+// var test = ["l"]
+// function testy(){
+//     return "l";
+// }
+// console.log(testy())
+// function testcheck(){
+//     console.log(check.findIndex(testy))
+// }
+// testcheck()
 
 
 //test
@@ -102,30 +102,11 @@ function input() {
         };
 
         function werdCheckLoopNeg() {
-            if (werdWerd.findIndex(dummyPlayerGuess) === -1) {
+            if (werd.indexOf(playerGuess) === -1) {
                 remainAttempts--;
                 remainderGrab.textContent = remainAttempts + "Fuck";
+            }
         }
-        function fuck(){
-           return werdWerd.findIndex(dummyPlayerGuess);
-        }
-        console.log(fuck())
-    }
-        console.log(dummyPlayerGuess() +"     dummyfunctionfuck");
-        console.log(werdWerd.findIndex(dummyPlayerGuess));
-        console.log(werd)
-        console.log(werdWerd)
-        console.log(dummyPlayerGuess)
-        
-        //function attemptUpdate() {
-        // remainAttempts--;
-        // remainderGrab.textContent = remainAttempts + "Fuck";
-
-        //}
-        // else if (answer.findIndex(playerGross) === -1) {
-        //     remainAttempts--;
-        //     remainderGrab.textContent = remainAttempts + "Fuck";
-        // }
     }
 }
 
