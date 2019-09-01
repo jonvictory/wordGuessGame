@@ -31,6 +31,10 @@ function werdGuess() {
 
 
 var remainder = werd.length;
+remainderGrab = document.getElementById("remainder");
+remainderGrab.textContent = remainder + "Fuck";
+
+
 
 function input() {
     document.onkeyup = function (event) {
@@ -47,6 +51,15 @@ function input() {
         }
     }
     }
+
+let attemptLeft = werd*2
+
+function attemptCalc(){
+
+    attemptLeft--;
+    
+}
+
 werdGuess();
 input();
 
