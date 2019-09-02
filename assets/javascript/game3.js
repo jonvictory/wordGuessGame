@@ -1,3 +1,4 @@
+window.onload = function () {
 //elemetal variables
 
 var directElemental = document.getElementById("directElemental");
@@ -8,6 +9,7 @@ playerGuessedGrab = document.getElementById("playerGuessed")
 answerSpaceGrab = document.getElementById("playerGuessed")
 
 //setting up words and word mechanics
+function werdGenerator(){
 var werds = [
     "snowcrash",
     "cyberspace",
@@ -24,6 +26,7 @@ for (var i = 0; i < werd.length; i++) {
 
 
 }
+
 
 
 
@@ -48,10 +51,15 @@ ansKeySel = document.getElementById("userElemental");
 ansKeySel.textContent = "Your Word: " + ansKey.join(" ");
 remainderGrab = document.getElementById("remainder");
 remainderGrab.textContent = remainAttempts + "Fuck";
+function initialConditions(){
+playerGuessedGrab.textContent = "Your Attempts: " + playerGuessed.join(" ");
+ansKeySel.textContent = "Your Word: " + ansKey.join(" ");
+}
 //
 //victory conditions
 //
-
+initialConditions();
+input();
 function victory(){
     if (remainder === 0) {
         alert("good job but the princess is in another castle");
@@ -65,6 +73,7 @@ function input() {
         directElemental.textContent = "Your Guess: " + playerGuess;
         var ansKeyCheck = ansKey.includes(playerGuess);
         var playerGuessedCheck = playerGuessed.includes(playerGuess);
+        var ansSpaceCheck = answerSpace.includes(playerGuess);
         console.log(remainder);
         //
         //run event.key dependant functions
@@ -80,7 +89,7 @@ function input() {
             for (var k = 0; k < answerSpace.length; k++) {
                 if (answerSpace[k] === playerGuess && playerGuessedCheck === false) {
                     playerGuessed[k] = playerGuess;
-                    playerGuessedGrab.textContent = "Your Word: " + playerGuessed.join(" ");
+                    playerGuessedGrab.textContent = "Your Attempts: " + playerGuessed.join(" ");
 
                 }
             }
@@ -99,7 +108,7 @@ function input() {
         }
          
         function werdCheckLoopNeg() {
-            if (werd.indexOf(playerGuess) === -1 && ansKeyCheck === false && playerGuessedCheck === false) {
+            if (werd.indexOf(playerGuess) === -1 && ansKeyCheck === false && playerGuessedCheck === false && ansSpaceCheck === true) {
                 remainAttempts--;
                 remainderGrab.textContent = remainAttempts + "Fuck";
             }
@@ -107,8 +116,9 @@ function input() {
         }
     }
 }
-
-input();
+}
+werdGenerator();
+}
 
 //playerinput
 
