@@ -21,7 +21,7 @@ var werd = werds[Math.floor(Math.random() * werds.length)];
 var ansKey = [];
 for (var i = 0; i < werd.length; i++) {
     ansKey[i] = "_";
-    
+
 
 }
 
@@ -48,6 +48,15 @@ ansKeySel = document.getElementById("userElemental");
 ansKeySel.textContent = "Your Word: " + ansKey.join(" ");
 remainderGrab = document.getElementById("remainder");
 remainderGrab.textContent = remainAttempts + "Fuck";
+//
+//victory conditions
+//
+
+function victory(){
+    if (remainder === 0) {
+        alert("good job but the princess is in another castle");
+    }
+}
 
 function input() {
     document.onkeyup = function (event) {
@@ -56,16 +65,14 @@ function input() {
         directElemental.textContent = "Your Guess: " + playerGuess;
         var ansKeyCheck = ansKey.includes(playerGuess);
         var playerGuessedCheck = playerGuessed.includes(playerGuess);
-        //lossElemental.textContent = "Your Attempts: " + playerGuessed;
+        console.log(remainder);
         //
         //run event.key dependant functions
         //
-
-        //guessed();
         updateGuessed();
         werdCheckLoopPos();
         werdCheckLoopNeg();
-
+        victory();
         //
         //define event.key dependant functions
         //
@@ -74,36 +81,10 @@ function input() {
                 if (answerSpace[k] === playerGuess && playerGuessedCheck === false) {
                     playerGuessed[k] = playerGuess;
                     playerGuessedGrab.textContent = "Your Word: " + playerGuessed.join(" ");
-                    
+
                 }
             }
         }
-                
-            
-        
-        // console.log(updateGuessed())
-        //function guessed() {
-
-        //     var keyPress;
-
-        //     if (typeof event !== 'undefined') {
-        //         keyPress = event.keyCode;
-        //     }
-        //     else if (e) {
-        //         keyPress = e.which;
-
-        //     }
-        //     else if (checkedGuessed() === "skip") {
-        //         keyPress = 0
-        //     }
-        //     playerGuessed.push(String.fromCharCode(keyPress));
-
-        //     return false;
-
-        // }
-        
-        
-
 
         function werdCheckLoopPos() {
             for (var j = 0; j < werd.length; j++) {
@@ -116,7 +97,7 @@ function input() {
                 }
             }
         }
-        //function 
+         
         function werdCheckLoopNeg() {
             if (werd.indexOf(playerGuess) === -1 && ansKeyCheck === false && playerGuessedCheck === false) {
                 remainAttempts--;
