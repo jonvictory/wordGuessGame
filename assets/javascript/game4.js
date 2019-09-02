@@ -45,7 +45,7 @@ window.onload = function () {
 
     
     
-    remainEleGrab.textContent = "There are " + remainder + " remaining elements to decrypt"
+    
 
     //
     //text statements
@@ -72,6 +72,8 @@ window.onload = function () {
         playerGuessedGrab.textContent = "Your attempts: ";
         ansKeyEleGrab.textContent = "Key Decryptor: " + ansKey.join(" ");
         remainAttGrab.textContent = "System lockout in: " + remainAttempts + " attempts";
+        remainEleGrab.textContent = "There are " + remainder + " remaining elements to decrypt";
+        //guessEle.textContent = "X";
 
     }
 
@@ -86,6 +88,20 @@ window.onload = function () {
             alert("You killed your decker. Good luck getting out of this one alive--you Wilson.")
         }
     }
+    function GenAnsKeySpace(werd) {
+        var ansKey = [];
+        for (var i = 0; i < werd.length; i++) {
+            ansKey[i] = "_";
+        }
+        return ansKey;
+    }
+    
+    function GenPGuessedSpace(answerSpace) {
+        playerGuessed = [];
+        for (var m = 0; m < answerSpace.length; m++) {
+            playerGuessed[m] = "_";
+        }
+    }
 
 
     //
@@ -96,16 +112,17 @@ window.onload = function () {
         document.onkeyup = function (event) {
             var playerInput = event.key;
             playerGuess = playerInput.toLowerCase();
-                     
+            var alphaCheck = alpha.includes(playerGuess)
             var ansKeyCheck = ansKey.includes(playerGuess);
             var playerGuessedCheck = playerGuessed.includes(playerGuess);
             var ansSpaceCheck = answerSpace.includes(playerGuess);
-            console.log(remainder);
+        
             //
             //run event.key dependant functions
             //
-            currSelDisp();
+            
             updateGuessed();
+            currSelDisp();
             werdCheckLoopPos();
             werdCheckLoopNeg();
             victoryConditions();
@@ -115,13 +132,14 @@ window.onload = function () {
             //
 
             function currSelDisp() {
-                if (playerGuess && playerGuessedCheck){
+                if (alphaCheck){
                 guessEle.textContent = playerGuess;
             }
             else {
                 guessEle.textContent = "X";
             }
         }
+        console.log(playerGuess && playerGuessedCheck)
             function updateGuessed() {
                 for (var k = 0; k < answerSpace.length; k++) {
                     if (answerSpace[k] === playerGuess && playerGuessedCheck === false) {
@@ -156,27 +174,15 @@ window.onload = function () {
             }
         }
     }
-    initialConditions();
     input();
+    initialConditions();
+    
     
 }
 
 
-function GenAnsKeySpace(werd) {
-    var ansKey = [];
-    for (var i = 0; i < werd.length; i++) {
-        ansKey[i] = "_";
-    }
-    return ansKey;
-}
 
-function GenPGuessedSpace(answerSpace) {
-    playerGuessed = [];
-    for (var m = 0; m < answerSpace.length; m++) {
-        playerGuessed[m] = "_";
-    }
-}
-    //playerinput
+
 
 
 
