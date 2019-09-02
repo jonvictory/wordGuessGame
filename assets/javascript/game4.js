@@ -47,7 +47,9 @@ window.onload = function () {
     
     remainEleGrab.textContent = "There are " + remainder + " remaining elements to decrypt"
 
-    
+    //
+    //text statements
+    //
 
     function textPGuessed(update) { 
         playerGuessedGrab.textContent = "Your attempts: " + update;
@@ -59,6 +61,11 @@ window.onload = function () {
     function textRemAtt(update) {
         remainAttGrab.textContent = "System lockout in: " + update + " attempts";
     }
+
+
+    //
+    //conditions
+    //
 
     function initialConditions() {
         
@@ -81,23 +88,15 @@ window.onload = function () {
     }
 
 
-
-
-
+    //
+    //onkey
+    //
 
     function input() {
         document.onkeyup = function (event) {
             var playerInput = event.key;
             playerGuess = playerInput.toLowerCase();
-            function currSelDisp() {
-                if (playerGuess && playerGuessedCheck){
-                guessEle.textContent = playerGuess;
-            }
-            else {
-                guessEle.textContent = "X";
-            }
-        }
-            
+                     
             var ansKeyCheck = ansKey.includes(playerGuess);
             var playerGuessedCheck = playerGuessed.includes(playerGuess);
             var ansSpaceCheck = answerSpace.includes(playerGuess);
@@ -114,6 +113,15 @@ window.onload = function () {
             //
             //define event.key dependant functions
             //
+
+            function currSelDisp() {
+                if (playerGuess && playerGuessedCheck){
+                guessEle.textContent = playerGuess;
+            }
+            else {
+                guessEle.textContent = "X";
+            }
+        }
             function updateGuessed() {
                 for (var k = 0; k < answerSpace.length; k++) {
                     if (answerSpace[k] === playerGuess && playerGuessedCheck === false) {
