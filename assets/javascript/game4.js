@@ -1,11 +1,12 @@
 window.onload = function () {
     //elemetal variables
 
-    directElemental = document.getElementById("directElemental");
+    guessEle = document.getElementById("guessEle");
     ansKeyEleGrab = document.getElementById("ansKeyEle");
     remainEleGrab = document.getElementById("remainEle");
     lossElemental = document.getElementById("lossElemental");
     playerGuessedGrab = document.getElementById("playerGuessed")
+    remainAttGrab = document.getElementById("remainAtt");
     //answerSpaceGrab = document.getElementById("answerSpace")
 
     var werds = [
@@ -44,19 +45,26 @@ window.onload = function () {
 
     
     
-    remainEleGrab.textContent = remainder + " fuck you"
+    remainEleGrab.textContent = "There are " + remainder + " remaining elements to decrypt"
 
     
 
-    
+    function textPGuessed(update) { 
+        playerGuessedGrab.textContent = "Your attempts: " + update;
+    }
+    function textCorrGuess(update) {
+        ansKeyEleGrab.textContent = "Key Decryptor: " + update;
+    }
 
+    function textRemAtt(update) {
+        remainAttGrab.textContent = "System lockout in: " + update + " attempts";
+    }
 
     function initialConditions() {
-        remainAttGrab = document.getElementById("remainAtt");
-        remainAttGrab.textContent = "System lockout in: " + remainAttempts + " attempts";
-
-        playerGuessedGrab.textContent = "Your attempts: " + playerGuessed.join(" ");
+        
+        playerGuessedGrab.textContent = "Your attempts: ";
         ansKeyEleGrab.textContent = "Key Decryptor: " + ansKey.join(" ");
+        remainAttGrab.textContent = "System lockout in: " + remainAttempts + " attempts";
 
     }
 
@@ -81,7 +89,15 @@ window.onload = function () {
         document.onkeyup = function (event) {
             var playerInput = event.key;
             playerGuess = playerInput.toLowerCase();
-            directElemental.textContent = "Your Guess: " + playerGuess;
+            function currSelDisp() {
+                if (playerGuess && playerGuessedCheck){
+                guessEle.textContent = playerGuess;
+            }
+            else {
+                guessEle.textContent = "X";
+            }
+        }
+            
             var ansKeyCheck = ansKey.includes(playerGuess);
             var playerGuessedCheck = playerGuessed.includes(playerGuess);
             var ansSpaceCheck = answerSpace.includes(playerGuess);
@@ -89,6 +105,7 @@ window.onload = function () {
             //
             //run event.key dependant functions
             //
+            currSelDisp();
             updateGuessed();
             werdCheckLoopPos();
             werdCheckLoopNeg();
@@ -101,7 +118,8 @@ window.onload = function () {
                 for (var k = 0; k < answerSpace.length; k++) {
                     if (answerSpace[k] === playerGuess && playerGuessedCheck === false) {
                         playerGuessed[k] = playerGuess;
-                        playerGuessedGrab.textContent = "Your Attempts: " + playerGuessed.join(" ");
+                        textPGuessed(playerGuessed.join(" "));
+                        //playerGuessedGrab.textContent = "Your attempts: " + playerGuessed.join(" ");
 
                     }
                 }
@@ -113,8 +131,9 @@ window.onload = function () {
                     if (werd[j] === playerGuess && ansKeyCheck === false) {
                         ansKey[j] = playerGuess;
                         remainder--;
-                        ansKeyEleGrab.textContent = "Your Word: " + ansKey.join(" ");
-                        remainEleGrab.textContent = remainder + " fuck you";
+                        textCorrGuess(ansKey.join(" "));
+                        //ansKeyEleGrab.textContent = "Key Decryptor: " + ansKey.join(" ");
+                        remainEleGrab.textContent = "There are " + remainder + " remaining elements to decrypt"
                     }
                 }
             }
@@ -122,7 +141,8 @@ window.onload = function () {
             function werdCheckLoopNeg() {
                 if (werd.indexOf(playerGuess) === -1 && ansKeyCheck === false && playerGuessedCheck === false && ansSpaceCheck === true) {
                     remainAttempts--;
-                    remainAttGrab.textContent = remainAttempts + "Fuck";
+                    textRemAtt(remainAttempts);
+                    //remainAttGrab.textContent = "System lockout in: " + remainAttempts + " attempts";
                 }
 
             }
