@@ -3,7 +3,9 @@
 var directElemental = document.getElementById("directElemental");
 var userElemental = document.getElementById("userElemental");
 var winsElemental = document.getElementById("winsElemental");
-var lossElemental = document.getElementById("lossElemental");
+lossElemental = document.getElementById("lossElemental");
+playerGuessedGrab = document.getElementById("playerGuessed")
+answerSpaceGrab = document.getElementById("playerGuessed")
 
 //setting up words and word mechanics
 var werds = [
@@ -13,30 +15,30 @@ var werds = [
     "countzero",
     "wilson"
 ]
-//test
-// var check = ["c", "h", "e", "k"]
-// var test = ["l"]
-// function testy(){
-//     return "l";
-// }
-// console.log(testy())
-// function testcheck(){
-//     console.log(check.findIndex(testy))
-// }
-// testcheck()
 
 
-//test
- 
 var werd = werds[Math.floor(Math.random() * werds.length)];
 var ansKey = [];
 for (var i = 0; i < werd.length; i++) {
     ansKey[i] = "_";
+    
 
 }
 
-var playerGuessed = []
-lossElemental.textContent = playerGuessed + "ASSHAT";
+
+
+playerGuessed = [];
+var alpha = "abcdefghijklmnopqrstuvwxyz";
+var answerSpace = alpha.split("");
+answerSpaceGrab.textContent = answerSpace;
+
+for (var m = 0; m < answerSpace.length; m++) {
+    playerGuessed[m] = "_";
+}
+
+
+
+
 var remainder = werd.length;
 var remainTest = document.getElementById("winsElemental")
 remainTest.textContent = remainder + " fuck you"
@@ -47,47 +49,59 @@ ansKeySel.textContent = "Your Word: " + ansKey.join(" ");
 remainderGrab = document.getElementById("remainder");
 remainderGrab.textContent = remainAttempts + "Fuck";
 
-splizit();
-function splizit() {
-    var splitter = werd.split("");
-    return splitter;
-}
-var werdWerd = splizit();
-
 function input() {
     document.onkeyup = function (event) {
         var playerInput = event.key;
         playerGuess = playerInput.toLowerCase();
         directElemental.textContent = "Your Guess: " + playerGuess;
+        //lossElemental.textContent = "Your Attempts: " + playerGuessed;
         //
         //run event.key dependant functions
         //
-        guessed();
+
+        //guessed();
+        checkGuessed();
         werdCheckLoopPos();
         werdCheckLoopNeg();
 
         //
         //define event.key dependant functions
         //
-        function dummyPlayerGuess() {
-            return playerGuess;
-            
-            
+        function checkGuessed() {
+            for (var k = 0; k < answerSpace.length; k++) {
+                if (answerSpace[k] === playerGuess && playerGuessed !== playerGuess) {
+                    playerGuessed[k] = playerGuess;
+                    playerGuessedGrab.textContent = "Your Word: " + playerGuessed.join(" ");
+                    
+                }
+            }
         }
-        function guessed() {
-            var keyPress;
-            if (typeof event !== 'undefined') {
-                keyPress = event.keyCode;
-            }
-            else if (e) {
-                keyPress = e.which;
-            }
-
-            playerGuessed.push(String.fromCharCode(keyPress));
-
-            return false;
-        };
+                
+            
         
+        // console.log(checkGuessed())
+        //function guessed() {
+
+        //     var keyPress;
+
+        //     if (typeof event !== 'undefined') {
+        //         keyPress = event.keyCode;
+        //     }
+        //     else if (e) {
+        //         keyPress = e.which;
+
+        //     }
+        //     else if (checkedGuessed() === "skip") {
+        //         keyPress = 0
+        //     }
+        //     playerGuessed.push(String.fromCharCode(keyPress));
+
+        //     return false;
+
+        // }
+        
+        
+
 
         function werdCheckLoopPos() {
             for (var j = 0; j < werd.length; j++) {
@@ -99,13 +113,14 @@ function input() {
                     remainTest.textContent = remainder + " fuck you";
                 }
             }
-        };
-
+        }
+        //function 
         function werdCheckLoopNeg() {
             if (werd.indexOf(playerGuess) === -1) {
                 remainAttempts--;
                 remainderGrab.textContent = remainAttempts + "Fuck";
             }
+
         }
     }
 }
