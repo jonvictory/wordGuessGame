@@ -54,22 +54,24 @@ function input() {
         var playerInput = event.key;
         playerGuess = playerInput.toLowerCase();
         directElemental.textContent = "Your Guess: " + playerGuess;
+        var ansKeyCheck = ansKey.includes(playerGuess);
+        var playerGuessedCheck = playerGuessed.includes(playerGuess);
         //lossElemental.textContent = "Your Attempts: " + playerGuessed;
         //
         //run event.key dependant functions
         //
 
         //guessed();
-        checkGuessed();
+        updateGuessed();
         werdCheckLoopPos();
         werdCheckLoopNeg();
 
         //
         //define event.key dependant functions
         //
-        function checkGuessed() {
+        function updateGuessed() {
             for (var k = 0; k < answerSpace.length; k++) {
-                if (answerSpace[k] === playerGuess && playerGuessed !== playerGuess) {
+                if (answerSpace[k] === playerGuess && playerGuessedCheck === false) {
                     playerGuessed[k] = playerGuess;
                     playerGuessedGrab.textContent = "Your Word: " + playerGuessed.join(" ");
                     
@@ -79,7 +81,7 @@ function input() {
                 
             
         
-        // console.log(checkGuessed())
+        // console.log(updateGuessed())
         //function guessed() {
 
         //     var keyPress;
@@ -106,7 +108,7 @@ function input() {
         function werdCheckLoopPos() {
             for (var j = 0; j < werd.length; j++) {
 
-                if (werd[j] === playerGuess) {
+                if (werd[j] === playerGuess && ansKeyCheck === false) {
                     ansKey[j] = playerGuess;
                     remainder--;
                     ansKeySel.textContent = "Your Word: " + ansKey.join(" ");
@@ -116,7 +118,7 @@ function input() {
         }
         //function 
         function werdCheckLoopNeg() {
-            if (werd.indexOf(playerGuess) === -1) {
+            if (werd.indexOf(playerGuess) === -1 && ansKeyCheck === false && playerGuessedCheck === false) {
                 remainAttempts--;
                 remainderGrab.textContent = remainAttempts + "Fuck";
             }
