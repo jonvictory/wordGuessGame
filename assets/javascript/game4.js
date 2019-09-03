@@ -8,6 +8,20 @@ window.onload = function () {
         document.getElementById("blackout").style.zIndex = "-2";
         
       });
+
+      var i = 0;
+      var txt = '.';
+      var speed = 50;
+      typeWriter();
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("typeHere").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+
     
       container();
     function container() {
@@ -245,4 +259,10 @@ window.onload = function () {
 
 
 
+
+function typed() {
+    return new Typed('#typed', {
+        stringsElement: '#typed-strings'
+    });
+}
 
