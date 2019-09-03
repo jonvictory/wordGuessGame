@@ -1,15 +1,14 @@
 window.onload = function () {
-    //elemetal variables
+    
+    var winner = 0
+    var loser = 0
+
     container();
 
 
-
-    
-    
-    //answerSpaceGrab = document.getElementById("answerSpace")
-    
     function container() {
         input();
+        
 
         guessEle = document.getElementById("guessEle");
         ansKeyEleGrab = document.getElementById("ansKeyEle");
@@ -17,7 +16,11 @@ window.onload = function () {
         lossElemental = document.getElementById("lossElemental");
         playerGuessedGrab = document.getElementById("playerGuessed")
         remainAttGrab = document.getElementById("remainAtt");
+        winGrab = document.getElementById("wins");
+        loseGrab = document.getElementById("loss");
 
+
+        
         var werds = [
             "snowcrash",
             "cyberspace",
@@ -32,14 +35,35 @@ window.onload = function () {
         
         var remainder = werd.length;
         var remainAttempts = werd.length * Math.floor(1.5);
-
         //
         //Generates the answer space (possible characters) and the space where the guessed characters will populate on the page
         //
-        var ifWerdUsed = [];
-    console.log(ifWerdUsed);
-        ifWerdUsed.push(werd);
-                
+        // var ifWerdUsed = werdTest;
+        // werdGenerator();
+        // newWerdCheck()
+        // toIfWerd();
+        // function werdGenerator() {
+        //     return 
+        // }
+
+        // function toIfWerd() {
+        // ifWerdUsed.push(werd);
+        // }
+        
+        // function newWerdCheck() {
+        //     for (n = 0; n < werdTest.length; n++) {
+        //         if (werdTest[n] === werd) {
+        //             werdGenerator();
+        //             toIfWerd();
+                      
+
+
+        //         }
+        //     }
+        // }
+    
+       
+        //console.log(werdTest[n] === werd);   
         
         GenPGuessedSpace(answerSpace);
 
@@ -64,25 +88,36 @@ window.onload = function () {
             remainAttGrab.textContent = "System lockout in: " + update + " attempts";
         }
 
+        function textWin(update) {
+            winGrab.textContent = "Firewall codes decrypted: " + update;
+        }
 
+        function textLose(update) {
+            loseGrab.textContent = "Security Alerted: " + update + " times";
+        }
         //
         //conditions
         //
 
         //function initialConditions
 
-        playerGuessedGrab.textContent = "Your attempts: ";
+        playerGuessedGrab.textContent = "Your attempts: " + playerGuessed.join(" ");
         ansKeyEleGrab.textContent = "Key Decryptor: " + ansKey.join(" ");
         remainAttGrab.textContent = "System lockout in: " + remainAttempts + " attempts";
         remainEleGrab.textContent = "There are " + remainder + " remaining elements to decrypt";
         guessEle.textContent = "null";
-
+        winGrab.textContent = "Firewall Codes Decrypted: " + winner;
+        loseGrab.textContent = "Security Alerted: " + loser;
+        
         //}
-
+        console.log(winner)
+        console.log(loser)
         function victoryConditions() {
             if (remainder < 1) {
                 alert("good job but the princess is in another castle");
+                textWin(winner++);
                 reset()
+                
                 return true;
             }
             else {
@@ -93,7 +128,9 @@ window.onload = function () {
         function defeatConditions() {
             if (remainAttempts < 1) {
                 alert("You killed your decker. Good luck getting out of this one alive--you Wilson.")
+                textLose(loser++);
                 reset()
+                
                 return true
             }
             else {
@@ -103,6 +140,7 @@ window.onload = function () {
 
         function reset() {
             container();
+            
         }
 
 
