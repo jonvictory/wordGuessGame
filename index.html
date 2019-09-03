@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css”> </i> <link
+        href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+
+</head>
+
+<body>
     <header>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-            <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+        <h1 style="text-align: center;">Give Me HEAD!</h1>
     </header>
-    <body>
-        <head>
-            <h1></h1>
-        </head>
-        <div class="row">
+    <div class="container monitor">
+        <div class="row montext mainWerd">
+            <div class="col-md-12">
+                <p id="ansKeyEle"></p>
+            </div>
+        </div>
+        <div class="row montext" style="text-align: center;">
             <div class="col-md-6">
-            <p id="directElemental">t</p>
-            <p id="remainder"></p>
+                <p id="remainAtt" class="sysUp botBor"></p>
+
             </div>
 
             <div class="col-md-6">
-            <p id="userElemental">t</p>
-            <p id="attemptsLeft"></p>
+                <p id="remainEle" class="sysUp botBor"></p>
+                <p id="attemptsLeft"></p>
             </div>
+            </div>
+            <!---->
+            <div class="row montext" style="text-align: center;">
+                    <div class="col-md-4">
+                        <p>Current Character Selection:</p>
+                        <p id="guessEle" class="currSel"></p>
+        
+                    </div>
+        
+                    <div class="col-md-4">
+                    </div>
+        
+        
+                    <div class="col-md-4">
+                    </div>
+            <!---->
 
         </div>
-        <div class="row">
-        <div class="container">
-            <div class="col-md-6">
-            <p id="winsElemental"></p>
+        <div class="row montext">
+            <div class="col-md-4  sysUp botPad">
+                <p id="wins" class="topBor"> </p>
             </div>
-
-            <div class="col-md-6">
-            <p id="lossElemental"></p>
+            <div class="col-md-4">
+                <p id="playerGuessed"></p>
+            </div>
+            <div class="col-md-4  sysUp botPad">
+                <p id="loss" class="topBor"></p>
             </div>
         </div>
-        <div>
-        <div><p id="playerGuessed"></p></div>
-        <div><p id="answerSpace"></p></div>
-        </div>
-        </div>
-        <!--my jS link-->
-        <script src="assets\javascript\game3.js">
-        </script>
-
-        <!--bootstrap jS links-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+    </div>
     <footer>
-
+        <div class="row montext">
+            <div class="col-md-12">
+                <h2>foot in your mouth</h2>
+            </div>
+        </div>
     </footer>
+    <!--my jS link-->
+    <script src="assets\javascript\game4.js">
+    </script>
+
+    <!--bootstrap jS links-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+<footer>
+
+</footer>
+
 </html>

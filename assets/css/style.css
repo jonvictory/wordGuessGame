@@ -1,0 +1,49 @@
+.montext {
+    text-align: center;
+}
+.monitor {
+    background-color: black;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 1em;
+    color: yellowgreen
+
+}
+
+.currSel {
+    border-style: dashed;
+    border-color: yellowgreen;
+    border-width: 2px;
+    margin-left: 2em;
+    font-size: 2em;
+    width: 50%;
+}
+
+.mainWerd {
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.sysUp {
+    font-weight: bold;
+
+}
+
+.botBor {
+    border-bottom-style: dashed;
+    border-bottom-color: yellowgreen;
+    border-bottom-width: 2px; 
+}
+
+.topBor {
+    border-top-style: dashed;
+    border-top-color: yellowgreen;
+    border-top-width: 2px; 
+    /* margin: 1em; */
+}
+
+.botPad {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
