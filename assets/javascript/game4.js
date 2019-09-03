@@ -1,5 +1,10 @@
 window.onload = function () {
     //elemetal variables
+    container();
+    
+
+    
+    
 
     guessEle = document.getElementById("guessEle");
     ansKeyEleGrab = document.getElementById("ansKeyEle");
@@ -8,7 +13,7 @@ window.onload = function () {
     playerGuessedGrab = document.getElementById("playerGuessed")
     remainAttGrab = document.getElementById("remainAtt");
     //answerSpaceGrab = document.getElementById("answerSpace")
-
+    function container(){
     var werds = [
         "snowcrash",
         "cyberspace",
@@ -42,10 +47,10 @@ window.onload = function () {
     //
     //remainder tracks the amount of correct guesses that are needed before the word is complete
     //
-
     
     
-    
+   
+    input();
 
     //
     //text statements
@@ -78,16 +83,33 @@ window.onload = function () {
     }
 
     function victoryConditions() {
-        if (remainder === 0) {
+        if (remainder < 1) {
             alert("good job but the princess is in another castle");
+            reset()
+            return true;
+        }
+        else {
+            return false;
         }
     }
 
     function defeatConditions() {
-        if (remainAttempts=== 0) {
+        if (remainAttempts < 1) {
             alert("You killed your decker. Good luck getting out of this one alive--you Wilson.")
+            reset()
+            return true
+        }
+        else {
+            return false;
         }
     }
+
+    function reset() {
+        container();
+        }
+    
+
+
     function GenAnsKeySpace(werd) {
         var ansKey = [];
         for (var i = 0; i < werd.length; i++) {
@@ -102,7 +124,7 @@ window.onload = function () {
             playerGuessed[m] = "_";
         }
     }
-
+    
 
     //
     //onkey
@@ -174,10 +196,8 @@ window.onload = function () {
             }
         }
     }
-    input();
-    initialConditions();
-    
-    
+}
+        
 }
 
 
