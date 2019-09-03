@@ -2,10 +2,14 @@ window.onload = function () {
     
     var winner = 0
     var loser = 0
+    
 
-    container();
-
-
+    document.getElementById("blackout").addEventListener("click", function(){
+        document.getElementById("blackout").style.zIndex = "-2";
+        
+      });
+    
+      container();
     function container() {
         input();
         
