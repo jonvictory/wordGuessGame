@@ -41,7 +41,7 @@
 }
 
 .blackou {
-    padding-top: 50%;
+    padding-top: 10%;
     font-family: 'Share Tech', sans-serif;
     /* font-size: 1em; */
     color: yellowgreen;
@@ -100,4 +100,20 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
+}
+
+#instructions {
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+}
+
+.footer {
+    color: yellowgreen;
+    background-color: black;
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+    width: inherit;
+    padding-top: 1em;
 }

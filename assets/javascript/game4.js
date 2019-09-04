@@ -10,7 +10,7 @@ window.onload = function () {
       });
 
       var i = 0;
-      var txt = '.';
+      var txt = 'W311, w311, w311... n!ce 2 533 e\^/e C0\^/*80y. R04L!! |O|z@R!!'
       var speed = 50;
       typeWriter();
       function typeWriter() {
