@@ -56,6 +56,8 @@
     text-align: center;
     width: 100%;
     height: 100%;
+    text-overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -108,8 +110,16 @@
 
 #instructions {
     width: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    text-overflow: hidden;
+    overflow: hidden;
+}
+#typeHere {
+    font-size: 1.5em;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: hidden;
 }
 
 .footer {
@@ -119,5 +129,6 @@
     /* position: fixed; */
     bottom: 0;
     width: inherit;
-    padding-top: 1em;
+    padding-top: 5em;
+    z-index: 100;
 }
