@@ -36,52 +36,53 @@ window.onload = function () {
         remainAttGrab = document.getElementById("remainAtt");
         winGrab = document.getElementById("wins");
         loseGrab = document.getElementById("loss");
+        hintGrab = document.getElementById("hint");
 
+        var snowcrash = {
+            name: "snowcrash",
+            hint: "Is it a computer malfuction characterized by a fuzzy-looking screen, a drug, or a novel? Perhaps you can try Uncle Enzo for a life line"
+        }
+        var cyberspace = {
+            name: "cyberspace",
+            hint: "After Al Gore pointed out that his dad '. . .invented the internet. . .' during a presidential debate--as a sad aggression tactic against an opponent that barely had the mental acuity of a 4 year old--the use of this once common name for that paternal invention was already in decline."
+        }
 
-        
+        var shadowrun = {
+            name: "shadowrun",
+            hint: "Whether you believe in the fatalist stories that spew forth from the dregs of society, and you can look past their unhealthy obsessions with the dealings of the FASA Corporation, it's far fetched to believe that there are people running the streets at night when Renraku Arts Corporate Security teams are prowling around with HV submachine guns."
+
+        }
+
+        var countzero = {
+        name: "countzero",
+        hint: "Everyone back in the sprawl knows about the Neuromancer, and a few can probably recall what happened to Mona Lisa, but there was this one kid that nobody really remembers because he started out as a real Wilson."
+        }
+
+        var wilson = {
+            name: "wilson",
+            hint: "It's really funny how a guy The Finn knew ended up being synonomous with really botching a decker job. The Finn still blows a blood vessel when someone brings it up. I guess they used to be friends, or something."
+        }
+
         var werds = [
-            "snowcrash",
-            "cyberspace",
-            "shadowrun",
-            "countzero",
-            "wilson"
+            snowcrash.name,
+            cyberspace.name,
+            shadowrun.name,
+            countzero.name,
+            wilson.name
         ]
 
         var alpha = "abcdefghijklmnopqrstuvwxyz";
         var answerSpace = alpha.split("");
         var werd = werds[Math.floor(Math.random() * werds.length)];
-        
         var remainder = werd.length;
         var remainAttempts = werd.length * Math.floor(1.5);
-        //
-        //Generates the answer space (possible characters) and the space where the guessed characters will populate on the page
-        //
-        // var ifWerdUsed = werdTest;
-        // werdGenerator();
-        // newWerdCheck()
-        // toIfWerd();
-        // function werdGenerator() {
-        //     return 
-        // }
-
-        // function toIfWerd() {
-        // ifWerdUsed.push(werd);
-        // }
         
-        // function newWerdCheck() {
-        //     for (n = 0; n < werdTest.length; n++) {
-        //         if (werdTest[n] === werd) {
-        //             werdGenerator();
-        //             toIfWerd();
-                      
+        
+        
 
+        
 
-        //         }
-        //     }
-        // }
-    
-       
-        //console.log(werdTest[n] === werd);   
+            
         
         GenPGuessedSpace(answerSpace);
 
@@ -95,7 +96,7 @@ window.onload = function () {
         //text statements
         //
 
-        function textPGuessed(update) {
+            function textPGuessed(update) {
             playerGuessedGrab.textContent = "Your attempts: " + update;
         }
         function textCorrGuess(update) {

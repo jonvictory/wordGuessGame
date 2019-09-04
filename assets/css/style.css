@@ -102,6 +102,10 @@
     padding-top: 10px;
 }
 
+.hint {
+    font-size: .5em;
+}
+
 #instructions {
     width: 100%;
     font-size: 1em;
