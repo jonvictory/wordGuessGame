@@ -99,7 +99,7 @@ window.onload = function () {
             playerGuessedGrab.textContent = "Your attempts: " + update;
         }
         function textCorrGuess(update) {
-            ansKeyEleGrab.textContent = "Key Decryptor: " + update;
+            ansKeyEleGrab.textContent = "Decrypt this pass-key: " + update;
         }
 
         function textRemAtt(update) {
@@ -107,11 +107,11 @@ window.onload = function () {
         }
 
         function textWin(update) {
-            winGrab.textContent = "Firewall codes decrypted: " + update;
+            winGrab.textContent = "Pass-keys decrypted: " + update;
         }
 
         function textLose(update) {
-            loseGrab.textContent = "Security Alerted: " + update + " times";
+            loseGrab.textContent = "Bots alerted: " + update + " times";
         }
         //
         //conditions
@@ -120,12 +120,12 @@ window.onload = function () {
         //function initialConditions
 
         playerGuessedGrab.textContent = "Your attempts: " + playerGuessed.join(" ");
-        ansKeyEleGrab.textContent = "Key Decryptor: " + ansKey.join(" ");
+        ansKeyEleGrab.textContent = "Decrypt this pass-key: " + ansKey.join(" ");
         remainAttGrab.textContent = "System lockout in: " + remainAttempts + " attempts";
         remainEleGrab.textContent = "There are " + remainder + " remaining elements to decrypt";
         guessEle.textContent = "null";
-        winGrab.textContent = "Firewall Codes Decrypted: " + winner;
-        loseGrab.textContent = "Security Alerted: " + loser;
+        winGrab.textContent = "Pass-keys decrypted: " + winner;
+        loseGrab.textContent = "Bots alerted: " + loser;
         
         //}
         console.log(winner)
@@ -233,7 +233,7 @@ window.onload = function () {
                             ansKey[j] = playerGuess;
                             remainder--;
                             textCorrGuess(ansKey.join(" "));
-                            //ansKeyEleGrab.textContent = "Key Decryptor: " + ansKey.join(" ");
+                            //ansKeyEleGrab.textContent = "Decrypt this pass-key: " + ansKey.join(" ");
                             remainEleGrab.textContent = "There are " + remainder + " remaining elements to decrypt"
                         }
                     }
