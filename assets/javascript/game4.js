@@ -133,7 +133,7 @@ window.onload = function () {
         console.log(loser)
         function victoryConditions() {
             if (remainder < 1) {
-                alert("good job but the princess is in another castle");
+                alert("Great Job, but unfortunately--my deck-jockey friend--the princess is in another castle. PLAY AGAIN! |_[o]|_zzzzzzzzzz");
                 textWin(winner++);
                 reset()
                 
@@ -146,7 +146,7 @@ window.onload = function () {
 
         function defeatConditions() {
             if (remainAttempts < 1) {
-                alert("You killed your decker. Good luck getting out of this one alive--you Wilson.")
+                alert("I know what you're thinking: is it going to kick the juice now? Does it feel like your data-jack is heating up? It could be... but if you start working on another pass-key maybe I'll think about letting you live a little longer.")
                 textLose(loser++);
                 reset()
                 
