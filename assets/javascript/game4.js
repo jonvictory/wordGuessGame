@@ -75,7 +75,7 @@ window.onload = function () {
         var answerSpace = alpha.split("");
         var werd = werds[Math.floor(Math.random() * werds.length)];
         var remainder = werd.length;
-        var remainAttempts = werd.length * Math.floor(1.5);
+        var remainAttempts = Math.round(1.5*werd.length);
         
         
         
