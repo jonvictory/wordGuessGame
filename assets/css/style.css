@@ -114,7 +114,7 @@
 }
 #hintButt {
     background: rgba(0, 200, 0, 0.30);
-    border: 4px;
+    border: 5px;
     border-style: double;
     border-color: yellowgreen;
     height: inherit;
@@ -129,7 +129,7 @@
 }
 .hintHintButt {
     background: rgba(0, 200, 0, 0.30);
-    border: 4px;
+    border: 5px;
     border-style: double;
     border-color: yellowgreen;
     height: inherit;
