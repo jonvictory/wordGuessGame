@@ -1,32 +1,32 @@
 window.onload = function () {
-    
+
     var winner = 0
     var loser = 0
-    
 
-    document.getElementById("blackout").addEventListener("click", function(){
+
+    document.getElementById("blackout").addEventListener("click", function () {
         document.getElementById("blackout").style.zIndex = "-2";
-        
-      });
 
-      var i = 0;
-      var txt = 'W311, w311, w311... n!ce 2 533 eWe C0W*80y. R04L!! |O|z@R!! _\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/_'
-      var speed = 50;
-      typeWriter();
-      function typeWriter() {
+    });
+
+    var i = 0;
+    var txt = 'W311, w311, w311... n!ce 2 533 eWe C0W*80y. R04L!! |O|z@R!! _\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/_'
+    var speed = 50;
+    typeWriter();
+    function typeWriter() {
         if (i < txt.length) {
-          document.getElementById("typeHere").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
+            document.getElementById("typeHere").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
         }
-      }
+    }
 
 
-    
-      container();
+
+    container();
     function container() {
         input();
-        
+
 
         guessEle = document.getElementById("guessEle");
         ansKeyEleGrab = document.getElementById("ansKeyEle");
@@ -54,8 +54,8 @@ window.onload = function () {
         }
 
         var countzero = {
-        name: "countzero",
-        hint: "Everyone back in the sprawl knows about the Neuromancer, and a few can probably recall what happened to Mona Lisa, but there was this one kid that nobody really remembers because he started out as a real Wilson."
+            name: "countzero",
+            hint: "Everyone back in the sprawl knows about the Neuromancer, and a few can probably recall what happened to Mona Lisa, but there was this one kid that nobody really remembers because he started out as a real Wilson."
         }
 
         var wilson = {
@@ -76,17 +76,13 @@ window.onload = function () {
         var werd = werds[Math.floor(Math.random() * werds.length)];
         var hint = werd;
         var remainder = werd.length;
-        var remainAttempts = Math.round(1.5*werd.length);
+        var remainAttempts = Math.round(1.5 * werd.length);
 
-        
-        
-        
-        
+        //
+    
+        //
 
-        
 
-            
-        
         GenPGuessedSpace(answerSpace);
 
         //
@@ -99,7 +95,7 @@ window.onload = function () {
         //text statements
         //
 
-            function textPGuessed(update) {
+        function textPGuessed(update) {
             playerGuessedGrab.textContent = "Your attempts: " + update;
         }
         function textCorrGuess(update) {
@@ -130,7 +126,7 @@ window.onload = function () {
         guessEle.textContent = "null";
         winGrab.textContent = "Pass-keys decrypted: " + winner;
         loseGrab.textContent = "Bots alerted: " + loser;
-        
+
         //}
         console.log(winner)
         console.log(loser)
@@ -139,7 +135,7 @@ window.onload = function () {
                 alert("Great Job, but unfortunately--my deck-jockey friend--the princess is in another castle. PLAY AGAIN! |_[o]|_zzzzzzzzzz");
                 textWin(winner++);
                 reset()
-                
+
                 return true;
             }
             else {
@@ -152,7 +148,7 @@ window.onload = function () {
                 alert("I know what you're thinking: is it going to kick the juice now? Does it feel like your data-jack is heating up? It could be... but if you start working on another pass-key maybe I'll think about letting you live a little longer.")
                 textLose(loser++);
                 reset()
-                
+
                 return true
             }
             else {
@@ -162,7 +158,7 @@ window.onload = function () {
 
         function reset() {
             container();
-            
+
         }
 
 
@@ -182,7 +178,7 @@ window.onload = function () {
             }
         }
         console.log(wilson.hint)
-        
+
 
         //
         //onkey
@@ -206,7 +202,7 @@ window.onload = function () {
         //             hintGrab.innerHTML = wilson.hint;
         //         }
         //       });
-        
+
         function input() {
             document.onkeyup = function (event) {
                 var playerInput = event.key;
@@ -215,12 +211,12 @@ window.onload = function () {
                 var ansKeyCheck = ansKey.includes(playerGuess);
                 var playerGuessedCheck = playerGuessed.includes(playerGuess);
                 var ansSpaceCheck = answerSpace.includes(playerGuess);
-                
+
 
                 //
                 //run event.key dependant functions
                 //
-                
+
 
                 updateGuessed();
                 currSelDisp();
