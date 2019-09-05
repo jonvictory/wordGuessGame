@@ -74,8 +74,11 @@ window.onload = function () {
         var alpha = "abcdefghijklmnopqrstuvwxyz";
         var answerSpace = alpha.split("");
         var werd = werds[Math.floor(Math.random() * werds.length)];
+        var hint = werd;
         var remainder = werd.length;
         var remainAttempts = Math.round(1.5*werd.length);
+
+        
         
         
         
@@ -178,12 +181,32 @@ window.onload = function () {
                 playerGuessed[m] = "_";
             }
         }
-
+        console.log(wilson.hint)
+        
 
         //
         //onkey
         //
+        // console.log(document.getElementById("hintButt").addEventListener("click", function(){}))
+        //     document.getElementById("hintButt").addEventListener("click", function(){
 
+        //         if (werd === "snowcrash") {
+        //         hintGrab.innerHTML = snowcrash.hint;
+        //         }
+        //         else if (werd === "cyberspace") {
+        //             hintGrab.innerHTML = cyberspace.hint;
+        //         }
+        //         else if (werd === "shadowrun") {
+        //             hintGrab.innerHTML = shadowrun.hint;
+        //         }
+        //         else if (werd === "contzero") {
+        //             hintGrab.innerHTML = countzero.hint;
+        //         }
+        //         else if (werd === "wilson") {
+        //             hintGrab.innerHTML = wilson.hint;
+        //         }
+        //       });
+        
         function input() {
             document.onkeyup = function (event) {
                 var playerInput = event.key;
@@ -192,10 +215,12 @@ window.onload = function () {
                 var ansKeyCheck = ansKey.includes(playerGuess);
                 var playerGuessedCheck = playerGuessed.includes(playerGuess);
                 var ansSpaceCheck = answerSpace.includes(playerGuess);
+                
 
                 //
                 //run event.key dependant functions
                 //
+                
 
                 updateGuessed();
                 currSelDisp();

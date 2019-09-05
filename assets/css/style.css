@@ -107,6 +107,12 @@
 .hint {
     font-size: 1.5em;
 }
+#hintButt {
+    border: 2px;
+    border-style: groove;
+    border-color: yellowgreen;
+    height: inherit;
+}
 
 #instructions {
     width: 100%;
