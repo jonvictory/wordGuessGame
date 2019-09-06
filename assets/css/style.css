@@ -110,7 +110,13 @@
 }
 
 .hint {
-    font-size: 1.5em;
+    font-size: .5em ! important;
+    border-radius: 15px;
+    text-shadow: 2px 2px 10px grey;
+    background: rgba(0, 200, 0, 0.30);
+    border: 5px;
+    border-style: double;
+    border-color: yellowgreen;
 }
 #hintButt {
     background: rgba(0, 200, 0, 0.30);

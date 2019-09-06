@@ -10,8 +10,8 @@ window.onload = function () {
     });
 
     var i = 0;
-    var txt = 'W311, w311, w311... n!ce 2 533 eWe C0W*80y. R04L!! |O|z@R!! _\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< NeW@rez 2 5t@Rt------- |_[]|_``/_'
-    var speed = 50;
+    var txt = 'W311, w311, w311... n!ce 2 533 eWe C0W*80y. R04L!! |O|z@R!! _\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/__\```|_{o}|_------C|_!c|< N-E-W@rez 2 5t@Rt------- |_[]|_``/_'
+    var speed = 75;
     typeWriter();
     function typeWriter() {
         if (i < txt.length) {
@@ -62,24 +62,53 @@ window.onload = function () {
             name: "wilson",
             hint: "It's really funny how a guy The Finn knew ended up being synonomous with really botching a decker job. The Finn still blows a blood vessel when someone brings it up. I guess they used to be friends, or something."
         }
-
-        var werds = [
-            snowcrash.name,
-            cyberspace.name,
-            shadowrun.name,
-            countzero.name,
-            wilson.name
+        var werdWerds = [
+            snowcrash,
+            cyberspace,
+            shadowrun,
+            countzero,
+            wilson
         ]
-
+        var werds = [
+            snowcrash,
+            cyberspace,
+            shadowrun,
+            countzero,
+            wilson
+        ]
+       
         var alpha = "abcdefghijklmnopqrstuvwxyz";
         var answerSpace = alpha.split("");
         var werd = werds[Math.floor(Math.random() * werds.length)];
-        var hint = werd;
-        var remainder = werd.length;
-        var remainAttempts = Math.round(1.5 * werd.length);
+        console.log(werd.name)
+        var remainder = werd.name.length;
+        var remainAttempts = Math.round(1.5 * werd.name.length);
+        var hintss = werd.hint;
+         
 
+        document.getElementById("hintButt").addEventListener("click", function() {
+            hintGrab.textContent = hintss;
+        })
+        
+            console.log(werd.hint)
         //
-    
+        // function hintClick () {
+        //     if (ansKeySel === "snowcrash") {
+        // hintGrab.textContet = snowcrash.hint;
+        // }
+        // else if (ansKeySel === "cyberspace") {
+        //     hintGrab.textContet = cyberspace.hint;
+        // }
+        // else if (ansKeySel === "shadowrun") {
+        //     hintGrab.textContet = shadowrun.hint;
+        // }
+        // else if (ansKeySel === "contzero") {
+        //     hintGrab.textContet = countzero.hint;
+        // }
+        // else if (ansKeySel === "wilson") {
+        //     hintGrab.textContet = wilson.hint;
+        // }
+        // }
         //
 
 
@@ -111,7 +140,7 @@ window.onload = function () {
         }
 
         function textLose(update) {
-            loseGrab.textContent = "Bots alerted: " + update + " times";
+            loseGrab.textContent = "Pass-key failure: " + update + " times";
         }
         //
         //conditions
@@ -125,7 +154,8 @@ window.onload = function () {
         remainEleGrab.textContent = "There are " + remainder + " remaining elements to decrypt";
         guessEle.textContent = "null";
         winGrab.textContent = "Pass-keys decrypted: " + winner;
-        loseGrab.textContent = "Bots alerted: " + loser;
+        loseGrab.textContent = "Pass-key failure: " + loser;
+        hintGrab.textContent = "";
 
         //}
         console.log(winner)
@@ -165,7 +195,7 @@ window.onload = function () {
 
         function GenAnsKeySpace(werd) {
             var ansKey = [];
-            for (var i = 0; i < werd.length; i++) {
+            for (var i = 0; i < werd.name.length; i++) {
                 ansKey[i] = "_";
             }
             return ansKey;
@@ -184,24 +214,7 @@ window.onload = function () {
         //onkey
         //
         // console.log(document.getElementById("hintButt").addEventListener("click", function(){}))
-        //     document.getElementById("hintButt").addEventListener("click", function(){
-
-        //         if (werd === "snowcrash") {
-        //         hintGrab.innerHTML = snowcrash.hint;
-        //         }
-        //         else if (werd === "cyberspace") {
-        //             hintGrab.innerHTML = cyberspace.hint;
-        //         }
-        //         else if (werd === "shadowrun") {
-        //             hintGrab.innerHTML = shadowrun.hint;
-        //         }
-        //         else if (werd === "contzero") {
-        //             hintGrab.innerHTML = countzero.hint;
-        //         }
-        //         else if (werd === "wilson") {
-        //             hintGrab.innerHTML = wilson.hint;
-        //         }
-        //       });
+        
 
         function input() {
             document.onkeyup = function (event) {
@@ -249,9 +262,9 @@ window.onload = function () {
                 }
 
                 function werdCheckLoopPos() {
-                    for (var j = 0; j < werd.length; j++) {
+                    for (var j = 0; j < werd.name.length; j++) {
 
-                        if (werd[j] === playerGuess && ansKeyCheck === false) {
+                        if (werd.name[j] === playerGuess && ansKeyCheck === false) {
                             ansKey[j] = playerGuess;
                             remainder--;
                             textCorrGuess(ansKey.join(" "));
@@ -262,7 +275,7 @@ window.onload = function () {
                 }
 
                 function werdCheckLoopNeg() {
-                    if (werd.indexOf(playerGuess) === -1 && ansKeyCheck === false && playerGuessedCheck === false && ansSpaceCheck === true) {
+                    if (werd.name.indexOf(playerGuess) === -1 && ansKeyCheck === false && playerGuessedCheck === false && ansSpaceCheck === true) {
                         remainAttempts--;
                         textRemAtt(remainAttempts);
                         //remainAttGrab.textContent = "System lockout in: " + remainAttempts + " attempts";
